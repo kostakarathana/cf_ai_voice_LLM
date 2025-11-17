@@ -1,0 +1,22 @@
+name = "cf-ai-voice-assistant"
+main = "src/index.ts"
+compatibility_date = "2024-11-15"
+
+# Workers AI binding for LLM access
+[ai]
+binding = "AI"
+
+# Durable Objects for conversation memory
+[[durable_objects.bindings]]
+name = "CONVERSATIONS"
+class_name = "ConversationDO"
+script_name = "cf-ai-voice-assistant"
+
+# Enable Durable Objects
+[[migrations]]
+tag = "v1"
+new_classes = ["ConversationDO"]
+
+# CORS headers for frontend communication
+[env.production]
+name = "cf-ai-voice-assistant"

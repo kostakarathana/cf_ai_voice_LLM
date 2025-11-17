@@ -1,0 +1,27 @@
+{
+  "name": "cf-ai-voice-assistant",
+  "version": "1.0.0",
+  "description": "Voice-to-AI application using Cloudflare Workers AI and Llama 3.3",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "pages:dev": "wrangler pages dev public",
+    "pages:deploy": "wrangler pages deploy public"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "ai",
+    "voice",
+    "llama"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^3.86.0"
+  }
+}
